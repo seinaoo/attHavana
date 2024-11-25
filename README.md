@@ -12,14 +12,14 @@ O projeto segue o paradigma da programação orientada a objetos, utilizando uma
 
 
 ### Acessar os Arquivos
-- **[Pasta `modelo`](src/modelo/)
-  - **[Animal.java](src/modelo/Animal.java)
-  - **[Cachorro.java](src/modelo/Cachorro.java)
-  - **[Gato.java](src/modelo/Gato.java)
-  - **[Passaro.java](src/modelo/Passaro.java)
+- **Pasta `modelo`**
+  - [Animal.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Animal.java)
+  - [Cachorro.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Cachorro.java)
+  - [Gato.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Gato.java)
+  - [Passaro.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Passaro.java)
 
-- **[Pasta `main`](src/main/)
-  - **[App.java](src/main/App.java)
+- **Pasta `main`**
+  - [App.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/main/App.java)
 
 
 ## Membros do Grupo
