@@ -13,13 +13,13 @@ O projeto segue o paradigma da programação orientada a objetos, utilizando uma
 
 ### Acessar os Arquivos
 - **Pasta `modelo`**
-  - [Animal.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Animal.java)
-  - [Cachorro.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Cachorro.java)
-  - [Gato.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Gato.java)
-  - [Passaro.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/modelo/Passaro.java)
+  - [Animal.java](https://github.com/Seinao/attHavana/blob/main/src/modelo/Animal.java)
+  - [Cachorro.java](https://github.com/Seinao/attHavana/blob/main/src/modelo/Cachorro.java)
+  - [Gato.java](https://github.com/Seinao/attHavana/blob/main/src/modelo/Gato.java)
+  - [Passaro.java](https://github.com/Seinao/attHavana/blob/main/src/modelo/Passaro.java)
 
 - **Pasta `main`**
-  - [App.java](https://github.com/seu_usuario/seu_repositorio/blob/main/src/main/App.java)
+  - [App.java](https://github.com/Seinao/attHavana/blob/main/src/main/App.java)
 
 
 ## Membros do Grupo
