@@ -10,11 +10,17 @@ Este projeto tem como objetivo criar um sistema de cadastro para animais em uma 
 O projeto segue o paradigma da programação orientada a objetos, utilizando uma classe abstrata `Animal` como classe-mãe e três classes-filhas: `Cachorro`, `Gato` e `Passaro`.
 
 
-- **[src/modelo/](src/modelo/):** Contém as classes do modelo, incluindo a classe abstrata `Animal` e suas classes-filhas.
-- **[src/main/](src/main/):** Contém a classe principal `App.java`, que gerencia a execução do programa.
-- **[lib/](lib/):** Diretório reservado para bibliotecas externas, caso sejam adicionadas ao projeto.
 
----
+### Acessar os Arquivos
+- **[Pasta `modelo`](src/modelo/)
+  - **[Animal.java](src/modelo/Animal.java)
+  - **[Cachorro.java](src/modelo/Cachorro.java)
+  - **[Gato.java](src/modelo/Gato.java)
+  - **[Passaro.java](src/modelo/Passaro.java)
+
+- **[Pasta `main`](src/main/)
+  - **[App.java](src/main/App.java)
+
 
 ## Membros do Grupo
 - **Samuel Fortunato**
