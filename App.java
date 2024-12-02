@@ -7,41 +7,51 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Animal> animais = new ArrayList<>();
+        ArrayList<Dono> donos = new ArrayList<>();
 
-        // Criar 3 instâncias de cada classe
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Cadastro do Cachorro " + (i + 1) + ":");
-            System.out.print("Nome: ");
-            String nomeCachorro = scanner.nextLine();
-            System.out.print("Idade: ");
-            int idadeCachorro = scanner.nextInt();
-            scanner.nextLine(); // Consumir quebra de linha
-            animais.add(new Cachorro(nomeCachorro, idadeCachorro));
+        System.out.println("Cadastro de Donos e Animais:");
 
-            System.out.println("Cadastro do Gato " + (i + 1) + ":");
-            System.out.print("Nome: ");
-            String nomeGato = scanner.nextLine();
-            System.out.print("Idade: ");
-            int idadeGato = scanner.nextInt();
-            scanner.nextLine(); // Consumir quebra de linha
-            animais.add(new Gato(nomeGato, idadeGato));
+        // Cadastro de donos e seus animais
+        for (int i = 0; i < 2; i++) { // Exemplo com 2 donos
+            System.out.println("Cadastro do Dono " + (i + 1) + ":");
+            System.out.print("Nome do Dono: ");
+            String nomeDono = scanner.nextLine();
+            System.out.print("Telefone do Dono: ");
+            String telefoneDono = scanner.nextLine();
+            Dono dono = new Dono(nomeDono, telefoneDono);
 
-            System.out.println("Cadastro do Pássaro " + (i + 1) + ":");
-            System.out.print("Nome: ");
-            String nomePassaro = scanner.nextLine();
-            System.out.print("Idade: ");
-            int idadePassaro = scanner.nextInt();
-            scanner.nextLine(); // Consumir quebra de linha
-            animais.add(new Passaro(nomePassaro, idadePassaro));
+            // Cadastro de 3 animais para cada dono
+            for (int j = 0; j < 3; j++) {
+                System.out.println("Cadastro do Animal " + (j + 1) + " para " + nomeDono + ":");
+                System.out.print("Tipo de Animal (1-Cachorro, 2-Gato, 3-Pássaro): ");
+                int tipoAnimal = scanner.nextInt();
+                scanner.nextLine(); // Consumir quebra de linha
+                System.out.print("Nome: ");
+                String nomeAnimal = scanner.nextLine();
+                System.out.print("Idade: ");
+                int idadeAnimal = scanner.nextInt();
+                scanner.nextLine(); // Consumir quebra de linha
+
+                Animal animal;
+                if (tipoAnimal == 1) {
+                    animal = new Cachorro(nomeAnimal, idadeAnimal);
+                } else if (tipoAnimal == 2) {
+                    animal = new Gato(nomeAnimal, idadeAnimal);
+                } else {
+                    animal = new Passaro(nomeAnimal, idadeAnimal);
+                }
+
+                dono.adicionarAnimal(animal);
+            }
+
+            donos.add(dono);
         }
 
-        // Exibir informações dos animais cadastrados
-        System.out.println("\nInformações dos Animais Cadastrados:");
-        for (Animal animal : animais) {
-            System.out.println("Nome: " + animal.getNome());
-            System.out.println("Idade: " + animal.getIdade());
-            animal.emitirSom();
+        // Exibir informações dos donos e seus animais
+        System.out.println("\nInformações Cadastradas:");
+        for (Dono dono : donos) {
+            System.out.println("Dono: " + dono.getNome() + ", Telefone: " + dono.getTelefone());
+            dono.listarAnimais();
             System.out.println("----------------------------");
         }
 
